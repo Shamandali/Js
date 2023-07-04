@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);	
+    padding: 24px 24px;
+    font-size: 30px;
+  }
+  .input{
+    display: flex;
+    justify-content: center;
+  }
+  /* lista desplegable */
+ #lista1, #lista2, #lista3, #lista4 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  #frescura,  #aqua ,#alegria,#emocion{
+    width: 70px;
+  }
+  .send{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    margin: 30px 700px;
+  }

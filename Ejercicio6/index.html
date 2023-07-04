@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-        .grid-container {
-          display: grid;
-          grid-template-columns: auto auto auto auto;
-          justify-content: center;
-        }
-        .grid-item {
-          border: 1px solid rgba(0, 0, 0, 0.8);	
-          padding: 24px 24px;
-          font-size: 30px;
-          height: 550px;
-        }
-        </style>
+        
+    </style>
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-item">
             <img src="Assets/1.png" alt="" style="width: 300px;">
+            <div class="input">
+                <input id="frescura" type="number" onkeypress="return valideKey(event);" placeholder="Cantidad">
+                <div class="dropdown">
+                    <select name="list" id="lista1" >
+                        <option value="" disabled selected>Vendedor</option>
+                        <option value="Juana">Juana</option>
+                        <option value="Pedro">Pedro</option>
+                    </select>
+                </div>
+                
+            </div>
+            
         </div>
         <div class="grid-item">
             <img src="Assets/2.png" alt="" style="width: 300px;">
+            <div class="input">
+                <input id="alegria" type="number" onkeypress="return valideKey(event);" placeholder="Cantidad">
+                <div class="dropdown">
+                    <select name="list" id="lista2" >
+                        <option value="" disabled selected>Vendedor</option>
+                        <option value="Juana">Juana</option>
+                        <option value="Pedro">Pedro</option>
+                    </select>
+                </div>
+            </div>
+            
         </div>
         <div class="grid-item">
             <img src="Assets/3.png" alt="" style="width: 300px;">
+            <div class="input">
+                <input id="emocion" type="number" onkeypress="return valideKey(event);" placeholder="Cantidad">
+                <div class="dropdown">
+                    <select name="list" id="lista3" >
+                        <option value="" disabled selected>Vendedor</option>
+                        <option value="Juana">Juana</option>
+                        <option value="Pedro">Pedro</option>
+                    </select>
+                </div>
+            </div>
+            
         </div>
         <div class="grid-item">
             <img src="Assets/4.png" alt="" style="width: 300px;">
+            <div class="input">
+                <input id="aqua"" type="number" onkeypress="return valideKey(event);" placeholder="Cantidad">
+                <div class="dropdown">
+                    <select name="list" id="lista4" >
+                        <option value="" disabled selected>Vendedor</option>
+                        <option value="Juana">Juana</option>
+                        <option value="Pedro">Pedro</option>
+                    </select>
+                </div>
+            </div>
         </div> 
       </div>
+       <button class="send" onclick="select1()">Comprar</button>
     <script src="script.js"></script>
 </body>
 </html>
