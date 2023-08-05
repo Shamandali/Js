@@ -1,12 +1,12 @@
 // Ejercicio 1:
-    // condition = prompt("¿Eres bellisimo/a?");
-    // if(condition == "si"){
-    //     console.log ("Ciertamente")
-    // } else if (condition == "no"){
-    //     console.log ("No te creo")
-    // }else{
-    //     console.log ("Ingresa otra respuesta")
-    // }
+    condition = prompt("¿Eres bellisimo/a?");
+    if(condition == "si"){
+        console.log ("Ciertamente")
+    } else if (condition == "no"){
+        console.log ("No te creo")
+    }else{
+        console.log ("Ingresa otra respuesta")
+    }
 // Ejercicio 2:
     // num = prompt("Ingrese un número");
     // if(num % 2 == 0 ){
@@ -117,51 +117,51 @@
 //         document.write(` Valor 70 MXN `);
 //     }
 // Ejercicio 10:
-alert("Desarrolla aplicaciones ¡AHORA!")
-var type = prompt("A continuación encontrás los niveles disponibles y su costo por MES: \n Course: $4999 MXN. \n Carrera $3999 MXN. \n Master: $2999 MXN \n Escribe tu programa ideal:");
-var beca = prompt("Ahora cuentanos a cuál beca aplicaste y empieza a disfrutar de sus BENEFICIOS!: \n Facebook: 20% de descuento.\n Google: 15% de descuento.\n Jesua: 50% de descuento.");
-var desc = Number;
-if(beca.toLocaleUpperCase()=="FACEBOOK"){
-     desc = "20";
-} else if(beca.toLocaleUpperCase()=="GOOGLE"){
-     desc = "15";
-}else if(beca.toLocaleUpperCase()=="JESUA"){
-     desc = "50";
-};
+// alert("Desarrolla aplicaciones ¡AHORA!")
+// var type = prompt("A continuación encontrás los niveles disponibles y su costo por MES: \n Course: $4999 MXN. \n Carrera $3999 MXN. \n Master: $2999 MXN \n Escribe tu programa ideal:");
+// var beca = prompt("Ahora cuentanos a cuál beca aplicaste y empieza a disfrutar de sus BENEFICIOS!: \n Facebook: 20% de descuento.\n Google: 15% de descuento.\n Jesua: 50% de descuento.");
+// var desc = Number;
+// if(beca.toLocaleUpperCase()=="FACEBOOK"){
+//      desc = "20";
+// } else if(beca.toLocaleUpperCase()=="GOOGLE"){
+//      desc = "15";
+// }else if(beca.toLocaleUpperCase()=="JESUA"){
+//      desc = "50";
+// };
 
-if (type.toLocaleUpperCase()=="COURSE") {
-    document.write('<h2 style = "color: purple"> Nivel elegido: Course </h1>');
-    document.write(" Valor matricula mensual: $4999 MXN");
-    const value = 4999;
-    const total1 = value * (desc/100);
-    const total = value - total1;
-    const total2 = total * 2;
-    document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
-    document.write(`<h3>Total por mes = ${total} MXN</h3>`);
-    document.write(`<h3>Total nivel (duración 2 meses) = ${total2} MXN</h3>`);
+// if (type.toLocaleUpperCase()=="COURSE") {
+//     document.write('<h2 style = "color: purple"> Nivel elegido: Course </h1>');
+//     document.write(" Valor matricula mensual: $4999 MXN");
+//     const value = 4999;
+//     const total1 = value * (desc/100);
+//     const total = value - total1;
+//     const total2 = total * 2;
+//     document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
+//     document.write(`<h3>Total por mes = ${total} MXN</h3>`);
+//     document.write(`<h3>Total nivel (duración 2 meses) = ${total2} MXN</h3>`);
 
-} else if(type.toLocaleUpperCase()=="CARRERA"){
-    document.write('<h2 style = "color: purple"> Nivel elegido: Carrera </h1>');
-    document.write(" Valor matricula mensual: $3999 MXN");
-    const value = 3999;
-    const total1 = value * (desc/100);
-    const total = value - total1;
-    const total2 = total * 6;
-    document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
-    document.write(`<h3>Total por mes = ${total} MXN</h3>`);
-    document.write(`<h3>Total nivel (duración 6 meses) = ${total2} MXN</h3>`);
+// } else if(type.toLocaleUpperCase()=="CARRERA"){
+//     document.write('<h2 style = "color: purple"> Nivel elegido: Carrera </h1>');
+//     document.write(" Valor matricula mensual: $3999 MXN");
+//     const value = 3999;
+//     const total1 = value * (desc/100);
+//     const total = value - total1;
+//     const total2 = total * 6;
+//     document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
+//     document.write(`<h3>Total por mes = ${total} MXN</h3>`);
+//     document.write(`<h3>Total nivel (duración 6 meses) = ${total2} MXN</h3>`);
 
-}else if(type.toLocaleUpperCase()=="MASTER"){
-    document.write('<h2 style = "color: purple"> Nivel elegido: Master </h2>');
-    document.write(" Valor matricula mensual: $2999 MXN");
-    const value = 2999;
-    const total1 = value * (desc/100);
-    const total = value - total1;
-    const total2 = total * 12;
-    document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
-    document.write(`<h3>Total por mes = ${total} MXN</h3>`);
-    document.write(`<h3>Total nivel (duración 12 meses) = ${total2} MXN</h3>`);
-}
+// }else if(type.toLocaleUpperCase()=="MASTER"){
+//     document.write('<h2 style = "color: purple"> Nivel elegido: Master </h2>');
+//     document.write(" Valor matricula mensual: $2999 MXN");
+//     const value = 2999;
+//     const total1 = value * (desc/100);
+//     const total = value - total1;
+//     const total2 = total * 12;
+//     document.write(` <h4>Descuento por beca ${beca} ${desc}%</h4>`);
+//     document.write(`<h3>Total por mes = ${total} MXN</h3>`);
+//     document.write(`<h3>Total nivel (duración 12 meses) = ${total2} MXN</h3>`);
+// }
 // Ejercicio 11:
 // alert("A continuación encontrás una ayuda para calcular el total a pagar de acuerdo con tus kilometros recorridos")
 // var distance = prompt("Escribe los kilometros recorridos (solo números)\n Ejemplo: 200");
